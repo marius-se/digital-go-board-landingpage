@@ -1,0 +1,281 @@
+@font-face {
+    font-family: roboto-light;
+    src: url(Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: roboto-bold;
+    src: url(Roboto-Bold.ttf);
+    font-weight: bold;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.hero-container {
+    height: 100vh;
+    background-color: black;
+    background-image: url("board-full-render-compressed.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-content {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.hero-title {
+    font-family: roboto-bold, sans-serif;
+    font-size: 60px;
+    text-align: center;
+    color: white;
+    padding-bottom: 127px;
+}
+
+.cta-container {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 68px;
+    align-content: stretch;
+    border-radius: 22px;
+    max-width: 100vw;
+}
+
+.cta-text-field {
+    width: 347px;
+    padding: 0 21px;
+    font-family: roboto-light, sans-serif;
+    font-size: 17px;
+    border: 0;
+    height: 68px;
+}
+
+.cta-submit-button {
+    padding: 21px 42px;
+    background-color: black;
+    color: white;
+    font-family: roboto-bold, sans-serif;
+    font-size: 17px;
+    border: 0;
+    height: 68px;
+}
+
+.scroll-icon {
+    width: 50px;
+    height: auto;
+    position: absolute;
+    bottom: 42px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main-container {
+}
+
+.about-container {
+    box-sizing: border-box;
+    height: 70vh;
+    padding: 120px 17%;
+    display: flex;
+    flex-flow: row;
+    align-content: space-between;
+    align-items: center;
+}
+
+.about-image {
+    width: auto;
+    height: 100%;
+}
+
+.about-text-container {
+    width: 55%;
+    margin-right: auto;
+    padding-right: 21px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.about-text-container--reversed {
+    margin-left: auto;
+    margin-right: 0;
+    padding-right: 0;
+    padding-left: 21px;
+}
+
+.about-container--reversed {
+    text-align: right;
+    flex-flow: row-reverse nowrap;
+}
+
+.about-title {
+    font-family: roboto-bold, sans-serif;
+    font-size: 26px;
+    margin: 0 0 21px 0;
+    letter-spacing: 0.02em;
+}
+
+.about-paragraph {
+    font-family: roboto-light, sans-serif;
+    font-size: 17px;
+    line-height: 170%;
+    letter-spacing: 0.02em;
+    margin: 0;
+}
+
+.cta-standalone-container {
+    background-color: #F5F5F5;
+    padding: 120px 151px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.release-title {
+    font-family: roboto-bold, sans-serif;
+    font-size: 26px;
+    padding-bottom: 21px;
+    text-align: center;
+}
+
+.footer-container {
+    background-color: #393939;
+    padding: 60px 70px;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-link, .footer-link:visited {
+    margin: 11px 32px;
+    padding: 10px;
+    color: white;
+    font-family: roboto-light, sans-serif;
+    font-size: 17px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.footer-link:hover, .footer-link:active {
+    font-weight: bold;
+}
+
+/* Desktop */
+@media (max-width: 1200.98px) {
+    .about-container {
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+}
+
+/* Tablets */
+@media (max-width: 1024.98px) {
+    .hero-title {
+        font-size: 50px;
+        padding-bottom: 70px;
+    }
+
+    .about-container {
+        height: 80vh;
+        padding: 50px 7%;
+    }
+
+    .about-text-container {
+        width: 40%;
+    }
+
+    .about-image {
+        height: 70%;
+    }
+
+    .cta-standalone-container {
+        padding: 100px 15%;
+    }
+}
+
+/* Landscape phone */
+@media (max-width: 812.98px) {
+    .hero-title {
+        font-size: 50px;
+        padding-bottom: 21px;
+    }
+
+    .scroll-icon {
+        bottom: 21px;
+    }
+
+    .about-container {
+        height: auto;
+        padding: 21px 21px;
+        flex-flow: column-reverse;
+    }
+
+    .about-image {
+        max-width: 100%;
+        height: auto;
+        max-height: 60vh;
+    }
+
+    .about-text-container {
+        width: 100%;
+        margin: 0;
+        flex-flow: column nowrap;
+        justify-content: center;
+        padding: 41px 0;
+    }
+/*
+    .about-container {
+        height: 100vh;
+        padding: 100px 21px;
+    }
+
+    .about-image {
+        height: 100%;
+    }*/
+
+}
+
+/* Portrait phone */
+@media (max-width: 575.98px) {
+    .about-container {
+        height: auto;
+        padding: 21px 21px;
+        flex-flow: column-reverse;
+    }
+
+    .about-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .about-text-container {
+        width: 100%;
+        margin: 0;
+        flex-flow: column nowrap;
+        justify-content: center;
+        padding: 41px 0;
+    }
+
+    .cta-container {
+        flex-flow: column;
+        align-content: center;
+        height: auto;
+    }
+
+    .footer-container {
+        flex-flow: column;
+    }
+}

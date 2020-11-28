@@ -281,10 +281,12 @@ body {
 
     .cta-text-field {
         width: 100%;
+        border-radius: 0;
     }
 
     .cta-submit-button {
         width: 100%;
+        border-radius: 0;
     }
 
     .cta-standalone-container {

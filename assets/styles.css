@@ -48,7 +48,6 @@ body {
     flex-flow: row nowrap;
     height: 68px;
     align-content: stretch;
-    border-radius: 22px;
     max-width: 100vw;
 }
 
@@ -239,15 +238,6 @@ body {
         justify-content: center;
         padding: 41px 0;
     }
-/*
-    .about-container {
-        height: 100vh;
-        padding: 100px 21px;
-    }
-
-    .about-image {
-        height: 100%;
-    }*/
 
 }
 
@@ -276,6 +266,14 @@ body {
         flex-flow: column;
         align-content: center;
         height: auto;
+    }
+
+    .cta-text-field {
+        width: 100%;
+    }
+
+    .cta-submit-button {
+        width: 100%;
     }
 
     .footer-container {

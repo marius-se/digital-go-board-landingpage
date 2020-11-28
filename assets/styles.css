@@ -181,6 +181,12 @@ body {
     font-weight: bold;
 }
 
+.imprint-container {
+    padding: 10% 5%;
+    font-family: roboto-light, sans-serif;
+    text-align: center;
+}
+
 /* Desktop */
 @media (max-width: 1200.98px) {
     .about-container {

@@ -269,6 +269,7 @@ body {
     .about-image {
         width: 100%;
         height: auto;
+        max-height: none;
     }
 
     .hero-title {
